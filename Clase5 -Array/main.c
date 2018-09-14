@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define T 5
-//[[[[printf("&d", sizeof);]]]] --- Se utiliza para saber cuanta cantidad de memoria utiliza esa varieble.
+//[[[[printf("&d", sizeof);]]]] --- Se utiliza para saber cuanta cantidad de memoria utiliza esa variable.
 //como perdir datos en un vector y luego mostrarlos.(carga secuencial con barrido secuencial)
 /*int main()
 {
