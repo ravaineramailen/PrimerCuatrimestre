@@ -11,32 +11,6 @@ int main()
     char buffer[1000];
     int i;
 
-    //FUNCION 1 IGRESA EL DATO Y LO VALIDA(2 FUNCIONES)
-    puts("Ingrese su nombre: ");
-    fflush(stdin);
-    gets(buffer);
-    while(strlen(buffer)>19)
-    {
-        puts("Reingrese su nombre: ");
-        fflush(stdin);
-        gets(buffer);
-    }
-
-    strcpy(nombre, buffer);
-
-    //FUNCION 2 IGRESA EL DATO Y LO VALIDA(2 FUNCIONES)
-    puts("Ingrese su apellido: ");
-    fflush(stdin);
-    gets(buffer);
-    while(strlen(buffer)>19)
-    {
-        puts("Reingrese su apellido: ");
-        fflush(stdin);
-        gets(buffer);
-    }
-
-    strcpy(apellido, buffer);
-
     //CARGA NOMBRE Y APELLIDO A "NOMBRE COMPLETO" Y LO MUESTRA
     strcpy(nombreCompleto, apellido);
     strcat(nombreCompleto, ", ");
@@ -44,7 +18,7 @@ int main()
 
     strlwr(nombreCompleto); //hace todas las letras minusculas
 
-    //PARA QUE LAS INICIALES QUEDEN MAYUSCULAS.
+    //PARA QUE LAS INICIALES QUEDEN MAYUSCULAS FORMA FACIL.
    /* for(i=0; i<strlen(nombreCompleto); i++)
     {
         if(i==0)
@@ -56,6 +30,8 @@ int main()
             nombreCompleto [i+1] = toupper(nombreCompleto[i+1]); // Le sumo 1, ya que el que se cambia es el de al lado del espacio, no el mismo.
         }
     }*/
+
+    //PARA QUE LAS INICIALES QUEDEN MAYUSCULAS.
 
     nombreCompleto [0] = toupper(nombreCompleto[0]);
 
@@ -70,8 +46,30 @@ int main()
     puts(nombreCompleto);
     return 0;
 
-    // >isalpha()<
-    // >isdigit('1' - 'h')< ,me devuelve 1 cuando es un numero, o devuelve 0 si le cargo otra cosa que no sea un numero
-    //atoi detecta una cadena y lo convierte en numero
+
 }
 
+int ingresarApellido (char[])
+{
+    puts("Ingrese su apellido: ");
+    fflush(stdin);
+    gets(buffer);
+}
+
+int validarApellido(char[])
+{
+    while(strlen(buffer)>19)
+    {
+        puts("Reingrese su apellido: ");
+        fflush(stdin);
+        gets(buffer);
+    }
+
+    strcpy(apellido, buffer);
+}
+
+
+
+ // >isalpha()<
+// >isdigit('1' - 'h')< ,me devuelve 1 cuando es un numero, o devuelve 0 si le cargo otra cosa que no sea un numero
+//atoi detecta una cadena y lo convierte en numero

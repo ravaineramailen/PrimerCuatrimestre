@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1537023598 source:c:\users\alumno\desktop\validarmail\mails.c
+	<stdio.h>
+	<stdlib.h>
+	"mails.h"
+
+1537022755 c:\users\alumno\desktop\validarmail\mails.h
+
+1537023604 source:c:\users\alumno\desktop\validarmail\main.c
+	<stdio.h>
+	<stdlib.h>
+	"mails.h"
+

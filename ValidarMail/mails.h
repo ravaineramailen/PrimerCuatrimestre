@@ -1,0 +1,1 @@
+int getEmail(char*);

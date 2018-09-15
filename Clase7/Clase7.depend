@@ -6,3 +6,16 @@
 
 1536839292 c:\users\alumno\desktop\clase7\funciones.h
 
+1537013596 source:c:\users\alumno\desktop\primercuatrimestre\clase7\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1537013596 c:\users\alumno\desktop\primercuatrimestre\clase7\funciones.h
+
+1537013596 source:c:\users\alumno\desktop\primercuatrimestre\clase7\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
