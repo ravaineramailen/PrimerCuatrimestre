@@ -22,3 +22,16 @@
 	<stdlib.h>
 	"Alumno.h"
 
+1537455176 source:c:\users\alumno\desktop\estructuras\estructuras\alumno.c
+	<stdio.h>
+	<stdlib.h>
+	"Alumno.h"
+
+1537455446 c:\users\alumno\desktop\estructuras\estructuras\alumno.h
+
+1537455531 source:c:\users\alumno\desktop\estructuras\estructuras\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Alumno.h"
+

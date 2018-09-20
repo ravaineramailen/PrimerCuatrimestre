@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1537446483 source:c:\users\alumno\desktop\buscarlibre\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1537448582 source:c:\users\alumno\desktop\buscarlibre\funciones.c
+	"funciones.h"
+
+1537447883 c:\users\alumno\desktop\buscarlibre\funciones.h
+
