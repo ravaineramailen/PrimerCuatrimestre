@@ -8,3 +8,13 @@
 
 1537447883 c:\users\alumno\desktop\buscarlibre\funciones.h
 
+1538048496 source:c:\users\alumno\desktop\clase10\buscarlibre\funciones.c
+	"funciones.h"
+
+1538048496 c:\users\alumno\desktop\clase10\buscarlibre\funciones.h
+
+1538048496 source:c:\users\alumno\desktop\clase10\buscarlibre\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+

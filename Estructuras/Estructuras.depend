@@ -35,3 +35,19 @@
 	<string.h>
 	"Alumno.h"
 
+1538059814 source:c:\users\alumno\desktop\clase10\estructuras\alumno.c
+	<stdio.h>
+	<stdlib.h>
+	"Alumno.h"
+
+1538059380 c:\users\alumno\desktop\clase10\estructuras\alumno.h
+
+1538060722 source:c:\users\alumno\desktop\clase10\estructuras\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Alumno.h"
+	"Curso.h"
+
+1538059630 c:\users\alumno\desktop\clase10\estructuras\curso.h
+

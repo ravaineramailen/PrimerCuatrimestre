@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "Alumno.h"
-
+#include "Curso.h"
 #define A 5
 //>>>>>>>>>>>>>>>>ESTRUCTURAS<<<<<<<<<<<<<<<<<<<<<< van en .h
 /*
@@ -56,14 +56,26 @@ void mostrarAlumno(eAlumno alumnoParametro)
 
 int main()
 {
+    /*eAlumno miAlumno={450,"Juan",7,"xxx",1};
+    miAlumno.fechaNacimiento.dia= 10;
+    miAlumno.fechaNacimiento.mes= 8;
+    miAlumno.fechaNacimiento.año= 2000;*/
+
     eAlumno listaAlumnos[A];
-    char opcion;
+    char opcion, flag, aux;
+    int i;
+    int j;
+
+    eCurso misCursos[3];
+    inicializarCursos(misCursos);
+    mostrarTodosLosCursos(misCursos,3);
 
     inicializarAlumnos(listaAlumnos, A, VACIO);
+    inicializarAlumnosConDatos(listaAlumnos,A);
 
     do
     {
-        printf("1-Cargar\n2-Mostrar\n3-Borrar\n10-Salir\nELIJA OPCION: ");
+        printf("1-Cargar\n2-Mostrar\n3-Borrar\n4-Modificar\n5-Modificar Alumno\n10-Salir\nELIJA OPCION: ");
         scanf("%d", &opcion);
         switch(opcion)
         {
@@ -81,14 +93,34 @@ int main()
             mostrarListados(listaAlumnos,A);
         break;
         case 3:
-            if(!borrarAlumno(listaAlumnos,A))
+            if(!borrarAlumno(listaAlumnos,A)==1)
             {
-                printf("Dato no encontrado")
+                printf("Dato no encontrado");
+            }
+        case 4:
+            if(!modificarAlumno(listaAlumnos,A)==1)
+            {
+                printf("Dato no encontrado");
+            }
+        case 5:
+            for(i=0;i<A;i++)
+            {
+                if(listaAlumnos[i].estado==OCUPADO)
+                {
+                    printf("%d---%s---%f--\n", listaAlumnos[i].legajo,listaAlumnos[i].nombre, listaAlumnos[i].promedio);
+                    for(j=0;j<3;j++)
+                    {
+                        if(listaAlumnos[i].idCurso==misCursos[j].id)
+                        {
+                            printf("%s\n", misCursos[j].nombre);
+                            break;
+                        }
+                    }
+                }
             }
 
         }
     } while(opcion==10);
-
 
 
     return 0;

@@ -24,6 +24,5 @@ int buscarLibre(int vector[], int tam, int valor)
             break;
         }
     }
-
     return indice;
 }
